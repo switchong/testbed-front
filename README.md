@@ -65,10 +65,10 @@
 
 --------------------------
 
-NFTGRAM-FRONT
+TESTBED-FRONT
 
 
-NFTGRAM - React TypeScript
+TESTBED - React TypeScript
 
 * 환경 설정
 - Web pack 파일

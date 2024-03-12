@@ -2,8 +2,6 @@ import { useSelector } from "react-redux";
 import { RootReducerType } from "reduxes";
 import profileIcon from "../assets/icon/ic-nav-profile2.png";
 import sinImage from "../assets/image/sin.jpg";
-import * as metaMask from "../modules/metamask";
-import * as kaikas from "../modules/kaikas";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { useCookies } from "react-cookie";
@@ -43,25 +41,11 @@ function HomePage() {
                 <p>{cookie.test}</p>
             </div>
             <br />
-            <div>
-                <p>{Metaname}</p>
-                <p>{Metaaddress}</p>
-                <p>{Metabalance}</p>
-            </div>
-            <br />
-            <div>
-                <p>{Kainame}</p>
-                <p>{Kaiaddress}</p>
-                <p>{Kaibalance}</p>
-            </div>
-            <br />
             <p>{process.env.ENV_KEY}</p>
             <p>{isPc ? "Pc" : "Mobile"}</p>
             <img src={profileIcon} alt="profile" width="200px" height="200px" />
             <img src={sinImage} alt="profile" width="200px" height="200px" />
-            <button onClick={metaMask.handleConnectMeta}>metamask연결</button>
-            <button onClick={kaikas.handelConnectKai}>kaikas연결</button>
-            <button onClick={handleGoApage}>a 페이지로 이동</button>
+
         </HomePageStyle>
     );
 }

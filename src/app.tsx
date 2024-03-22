@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 import RootRoute from "./routes";
 import { useMediaQuery } from "react-responsive";
 import { NowMediaQueryAction } from "./reduxes/nowMediaQueryRedux";
+import "./config";
 
 //test
 function App() {

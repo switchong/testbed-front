@@ -1,0 +1,75 @@
+body{
+    text-align: center;
+}
+
+div{
+    margin-top: 0;
+}
+
+.accountheader {
+    width: 110px;
+    background-color: white;
+    border-style: none;
+    vertical-align: middle;
+    height: 25px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.iconButton {
+    width: 20px;
+    background-color: white;
+    border-style: none;
+    vertical-align: middle;
+    height: 25px;
+    padding: 0px;
+    margin: 0px 5px 5px 0px;
+}
+
+.divgubun {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.firstHeader{
+    display: flex;
+    /* justify-content: space-between; */
+}
+button:hover {
+    cursor: pointer;
+}
+
+.mainBody {
+    text-align: center;
+    margin: 10px auto;
+    width: 360px;
+    height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.accountgubun {
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+    margin-right: 5px;
+}
+
+.sideButton{
+    text-align: center;
+    width: 60px;
+}
+
+.middleButton {
+    text-align: center;
+    width: 240px;
+}
+
+.rightOver {
+    margin-right: 20px;
+}
+
+.text {
+    margin-left: 0px;
+}

@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+div {
+    margin-top: 0;
+}
+
+.accountheader {
+    width: 110px;
+    background-color: white;
+    border-style: none;
+    vertical-align: middle;
+    height: 25px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.firstHeader {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.iconButton {
+    width: 20px;
+    background-color: white;
+    border-style: none;
+    vertical-align: middle;
+    height: 25px;
+    padding: 0px;
+    margin: 0px 5px 5px 0px;
+}
+
+.middleButton {
+    text-align: center;
+    width: 240px;
+}
+
+.rightOver {
+    margin-right: 20px;
+}
+
+.sideButton {
+    text-align: center;
+    width: 60px;
+}
+
+.text {
+    margin-left: 0px;
+}

@@ -127,19 +127,19 @@ table {
 }
 
 @font-face {
-    font-family: "pusab";
-    src: url("./assets/font/8-bit-pusab-reset.ttf") format("truetype");
+    font-family: "kcc";
+    src: url("./assets/font/KCC-Hanbit.woff") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "pusab";
-    src: url("./assets/font/8-bit-pusab-reset.ttf") format("truetype");
+    font-family: "kcc";
+    src: url("./assets/font/KCC-Hanbit.woff") format("truetype");
     font-style: normal;
     font-weight: bold;
 }
 
 body {
-    font-family: "pusab", cursive !important;
+    font-family: "kcc", cursive !important;
 }

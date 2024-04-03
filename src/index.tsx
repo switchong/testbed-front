@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import rootReducer from "./reduxes";
 import { CookiesProvider } from "react-cookie";
+//import Button from "react-bootstrap/Button";
 
 const store = createStore(rootReducer);
 

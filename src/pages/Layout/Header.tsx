@@ -1,12 +1,20 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
+
 import headerCSS from "../../assets/css/header.css"
 import backImg from "../../assets/icon/icons8-5.png";
 import menuImg from "../../assets/icon/icons8-2.png";
 import homeImg from "../../assets/icon/icons8-3.png";
+import Sidebar from "./SideBar";
+
 function Header() {
     const navigate = useNavigate();
     const location = useLocation();
     const a = location.state;
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const toggleSide = () => {
+        setIsOpen(true);
+    }
 
     return (
             <div className={headerCSS.firstHeader}>
@@ -24,8 +32,9 @@ function Header() {
                     }
                 </div>
                 <div className={headerCSS.sideButton}>
-                    <button className={`${headerCSS.iconButton} ${headerCSS.rightButton}`} onClick={()=> navigate("/")}><img src={homeImg} width="27px" height="27px"/></button>
-                    <button className={`${headerCSS.iconButton} ${headerCSS.rightButton}`}><img src={menuImg} width="25px" height="25px" /></button>
+                    <button type="button" className={`${headerCSS.iconButton} ${headerCSS.rightButton}`} onClick={()=> navigate("/")}><img src={homeImg} width="27px" height="27px" /></button>
+                    <button type="button" className={`${headerCSS.iconButton} ${headerCSS.rightButton}`} onClick={toggleSide}><img src={menuImg} width="25px" height="25px" /></button>
+                    <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}/>
                 </div>
             </div>
     );

@@ -62,7 +62,7 @@ function SideBar({isOpen, setIsOpen}: {isOpen: boolean; setIsOpen: any}){
             />
             <ul>
                 <Menu onClick={()=>window.open("https://thecheat.co.kr/rb/?mod=_search")}>금융사기 조회</Menu>
-                <Menu>메뉴2</Menu>
+                <Menu>다크모드</Menu>
                 <Menu>메뉴3</Menu>
             </ul>
         </SideBarWrap>

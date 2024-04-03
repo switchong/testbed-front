@@ -5,6 +5,7 @@ import YsPage2 from "../pages/ysPage2";
 import Sample01 from "../pages/Sample01_01";
 import Sample02 from "../pages/Sample01_02";
 import Sample03 from "../pages/Sample01_03";
+import APage from "pages/aPage";
 
 function RootRoute() {
     return (

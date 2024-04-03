@@ -5,6 +5,7 @@ const { default: merge } = require("webpack-merge");
 const config = {
     mode: "development",
     devServer: {
+        allowedHosts: "all",
         historyApiFallback: true,
         open: false,
         port: 3000,

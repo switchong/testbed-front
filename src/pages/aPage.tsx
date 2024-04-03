@@ -43,6 +43,12 @@ function APage() {
         <>
             A페이지
             <Link to="/">app으로 이동하기</Link>
+            <p></p>
+            B페이지
+            <Link to="/aPage">page로 이동하기</Link>
+            <p></p>
+            YS페이지
+            <Link to="/ysPage1">ys로 이동하기</Link>
             <p>{cookie.test || "no cookie"}</p>
             <p>{data}</p>
             <img src={busIcon} alt="example" width="200px" height="200px" />

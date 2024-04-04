@@ -1,46 +1,12 @@
-body{
-    text-align: center;
-}
 
 div{
     margin-top: 0;
-}
-
-.accountheader {
-    width: 110px;
-    background-color: white;
-    border-style: none;
-    vertical-align: middle;
-    height: 25px;
-    padding: 0px;
-    margin-bottom: 10px;
-}
-
-.iconButton {
-    width: 20px;
-    background-color: white;
-    border-style: none;
-    vertical-align: middle;
-    height: 25px;
-    padding: 0px;
-    margin: 0px 5px 5px 0px;
-}
-
-.divgubun {
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.firstHeader{
-    display: flex;
-    /* justify-content: space-between; */
 }
 button:hover {
     cursor: pointer;
 }
 
 .mainBody {
-    text-align: center;
     margin: 10px auto;
     width: 360px;
     height: 100vh;
@@ -48,28 +14,108 @@ button:hover {
     margin-bottom: 0;
 }
 
-.accountgubun {
+.account_box{
+    padding:20px;
+    background-color: #f5f9f7;
+    border-radius: 10px;    
+}
+.account_box1{
+    margin:20px;
+    padding:20px;
+    background-color: #f5f9f7;
+    border-radius: 10px;    
+}
+.account_hide_btn{
+    background-color: #f7e7e7b8;
+    color: grey;
+    border:none;
+    margin-left: 5px;
+}
+.account_box p{
+    margin:0 0 5px 0;
+}
+.inner_title{
+    font-weight:bold;
+}
+.inner_sub_title{
+    font-size: 14px;
+    font-weight:bold;
+    color: #929696;
+}
+.txt_price{
+    text-align:center;
+    padding: 20px;
+}
+.txt_price1{
+    text-align:center;
+    padding: 3px;
+}
+.txt_price span,.txt_price1 span{
+    font-weight:bold;
+    font-size: 25px;
+}
+.txt_price button{
+    background-color:#ddd;
+    border-radius:10px;
+    border:1px solid #ddd;
+    color:#8a8989;
+    font-size:14px;
+    font-weight:bold;
+}
+.btn_wrap{
+    background-color: #f5f9f7;
+    margin-top:20px;
+    display:table;
+    width:100%;
+}
+.btn_wrap>span{
+    display: table-cell;
+    width:50%;
+    text-align:center
+}
+.btn_wrap>span:first-child{
+    border-right:1px solid #ddd;
+}
+.btn_wrap>span>button{
+    font-size:14px;
+    font-weight: bold;
+    background-color: #f5f9f7;
+    border: 1px solid #f5f9f7;
+    color:#387c57;
+}
+.float_right {
+    float: right;
+}
+.text_center {
+    text-align: center;
+}
+.sub_title {
+    font-size: 18px;
+    font-weight:bold;
+    color: #929696;
+}
+.account_hide_btn {
+    background-color: #f7e7e7b8;
+    color: grey;
+    border: none;
+    margin-left: 5px;
+}
+.border{
+    border: 3px;
     border-style: solid;
-    border-color: black;
-    border-radius: 10px;
-    background-color: white;
+    border-radius: 40px;
+    border-color: white;
+    box-shadow: 0px 0px 0px 3px #929696;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.padding{
+    padding: 0;
+}
+.divgubun>button{
+    border: 2px;
+    border-style: solid;
     margin-right: 5px;
-}
-
-.sideButton{
-    text-align: center;
-    width: 60px;
-}
-
-.middleButton {
-    text-align: center;
-    width: 240px;
-}
-
-.rightOver {
-    margin-right: 20px;
-}
-
-.text {
-    margin-left: 0px;
+    margin-bottom: 5px;
 }

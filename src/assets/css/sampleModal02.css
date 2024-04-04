@@ -8,7 +8,7 @@
     position: fixed;
     bottom: 0px;
 }
-.dialogBox{
+.modalDialogBox{
     width: 360px;
     height: 400px;
     display: flex; 
@@ -21,6 +21,10 @@
     background-color: white;
     z-index: 10000;
 }
+.modalHeader {
+    display: block;
+    text-align: center;
+}
 .backDrop{
     width: 100vw;
     height: 100vh;
@@ -28,11 +32,4 @@
     top: 0;
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.2);
-}
-.bankDivision {
-    width: 25%;
-    height: 40px;
-    color: black;
-    background-color: white;
-    border: none;
 }

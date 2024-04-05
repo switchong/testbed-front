@@ -50,6 +50,18 @@ function SideBar({isOpen, setIsOpen}: {isOpen: boolean; setIsOpen: any}){
         setIsOpen(false);
     }
 
+    const [theme, setTheme] = useState("light");
+    const isLight = theme === "light";
+    const toggleTheme = () => {
+        if(theme === "light") {
+            console.log("여기탐 111")
+            setTheme("dark");
+        } else {
+            console.log("여기탐 222")
+            setTheme("light");
+        }
+    }
+
     return (
         <SideBarWrap id="sidebar" ref={outside} className={isOpen ? "open" : ""}>
             <img 
@@ -62,7 +74,7 @@ function SideBar({isOpen, setIsOpen}: {isOpen: boolean; setIsOpen: any}){
             />
             <ul>
                 <Menu onClick={()=>window.open("https://thecheat.co.kr/rb/?mod=_search")}>금융사기 조회</Menu>
-                <Menu>다크모드</Menu>
+                <Menu onClick={toggleTheme}>{isLight ? "Dark Mode" : "Light Mode"}</Menu>
                 <Menu>메뉴3</Menu>
             </ul>
         </SideBarWrap>

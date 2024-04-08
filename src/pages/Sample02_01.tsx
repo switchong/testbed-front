@@ -1,8 +1,8 @@
-import Header from "./Layout/Header";
+import CardHeader from "./Layout/CardHeader";
 function Card() {
     return (
         <>
-            <Header/>
+            <CardHeader/>
         </>  
     );
 }

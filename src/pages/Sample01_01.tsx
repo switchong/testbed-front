@@ -65,7 +65,7 @@ function ListPage() {
                                                             color:"black",
                                                             backgroundColor: "#f5f9f7",
                                                             borderColor:"#f5f9f7"
-                                                        }} onClick={() => { navigate('/Transfer', { state: { header: "이체" } }); }} active>이체</Button>
+                                                        }} onClick={() => { navigate('/Transfer', { state: { header: "이체", info: info } }); }} active>이체</Button>
                                                     </span>
                                                     <span>
                                                         <Button style={{

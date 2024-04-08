@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import headerCSS from "../../assets/css/header.css"
 import backImg from "../../assets/icon/icons8-5.png";
@@ -10,7 +11,12 @@ function Header() {
     const navigate = useNavigate();
     const location = useLocation();
     const state = location.state as { header: string };
-    
+
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const toggleSide = () => {
+        setIsOpen(true);
+    }
+
     return (
             <div className={headerCSS.firstHeader}>
                 <div className={headerCSS.sideButton}>
@@ -19,8 +25,8 @@ function Header() {
                 <div className={headerCSS.middleButton}>
                     {
                         state === null ?
-                        <>  <button className={`${headerCSS.accountheader} ${headerCSS.text}`}>전체 계좌</button>
-                            <button className={`${headerCSS.accountheader} ${headerCSS.rightOver} ${headerCSS.text}`}>다른 금융</button>
+                        <>  <button className={`${headerCSS.accountheader} ${headerCSS.text}`} onClick={() => { navigate("/")}}>전체 계좌</button>
+                            <button className={`${headerCSS.accountheader} ${headerCSS.rightOver} ${headerCSS.text}`} onClick={() => { navigate("/otherFinance")}}>다른 금융</button>
                         </> :
                         <button className={`${headerCSS.accountheader} ${headerCSS.rightOver} ${headerCSS.text}`}>{state.header as any}</button>
                             
@@ -28,7 +34,8 @@ function Header() {
                 </div>
                 <div className={headerCSS.sideButton}>
                     <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.iconButton} ${headerCSS.rightButton}`} onClick={() => { navigate("/")}} active><img src={homeImg} width="27px" height="27px"/></Button>
-                    <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.iconButton} ${headerCSS.rightButton}`} active><img src={menuImg} width="25px" height="25px" /></Button>
+                    <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.iconButton} ${headerCSS.rightButton}`} onClick={toggleSide} active><img src={menuImg} width="25px" height="25px" /></Button>
+                    <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}/>
                 </div>
             </div>
     );

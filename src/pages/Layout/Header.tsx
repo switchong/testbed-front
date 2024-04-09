@@ -20,15 +20,15 @@ function Header() {
     return (
             <div className={headerCSS.firstHeader}>
                 <div className={headerCSS.sideButton}>
-                <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.iconButton} ${headerCSS.rightOver}`} onClick={() => { navigate(-1) }} active><img src={backImg} width="20px" height="20px"/></Button>
+                    <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.iconButton} ${headerCSS.rightOver}`} onClick={() => { navigate(-1) }} active><img src={backImg} width="20px" height="20px"/></Button>
                 </div>
                 <div className={headerCSS.middleButton}>
                     {
                         state === null ?
-                        <>  <button className={`${headerCSS.accountheader} ${headerCSS.text}`} onClick={() => { navigate("/")}}>전체 계좌</button>
-                            <button className={`${headerCSS.accountheader} ${headerCSS.rightOver} ${headerCSS.text}`} onClick={() => { navigate("/otherFinance")}}>다른 금융</button>
+                        <>  <Button style={{backgroundColor: "white"}} variant="light" className={`${headerCSS.accountheader} ${headerCSS.text}`} active onClick={() => { navigate("/")}}>전체 계좌</Button>
+                            <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.accountheader} ${headerCSS.rightOver} ${headerCSS.text}`} active onClick={() => { navigate("/otherFinance")}}>다른 금융</Button>
                         </> :
-                        <button className={`${headerCSS.accountheader} ${headerCSS.rightOver} ${headerCSS.text}`}>{state.header as any}</button>
+                        <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.accountheader} ${headerCSS.rightOver} ${headerCSS.text}`} active>{state.header as any}</Button>
                             
                     }
                 </div>

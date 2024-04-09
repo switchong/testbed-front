@@ -4,6 +4,7 @@ import { Accordion, Button } from 'react-bootstrap';
 import CSS1 from "../assets/css/sample01.css";
 import Header from "./Layout/Header";
 
+
 function ListPage() {
     const navigate = useNavigate();
 
@@ -38,6 +39,26 @@ function ListPage() {
             amt: 900000000,
             bankCode: "999",
             bankName: "나무증권",
+            isShowHide: true
+        },
+        {
+            alias: "자유적금",
+            accountType: "입출금계좌",
+            accountNum: "127-777777-77-777",
+            ownerName: "기업은행자유적금",
+            amt: 500000000,
+            bankCode: "127",
+            bankName: "기업은행",
+            isShowHide: true
+        },
+        {
+            alias: "TEST",
+            accountType: "TEST",
+            accountNum: "123-456-789-000",
+            ownerName: "TEST",
+            amt: 100000000,
+            bankCode: "TEST",
+            bankName: "TEST",
             isShowHide: true
         },
     ]);

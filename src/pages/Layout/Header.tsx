@@ -26,7 +26,8 @@ function Header() {
                     {
                         state === null ?
                         <>  <Button style={{backgroundColor: "white"}} variant="light" className={`${headerCSS.accountheader} ${headerCSS.text}`} active onClick={() => { navigate("/")}}>전체 계좌</Button>
-                            <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.accountheader} ${headerCSS.rightOver} ${headerCSS.text}`} active onClick={() => { navigate("/otherFinance")}}>다른 금융</Button>
+                            <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.accountheader} ${headerCSS.text}`} active onClick={() => { navigate("/otherFinance")}}>다른 금융</Button>
+                            <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.accountheader} ${headerCSS.text}`} active onClick={() => { navigate("/myData")}}>MY DATA</Button>
                         </> :
                         <Button style={{ backgroundColor: "white"}} variant="light" className={`${headerCSS.accountheader} ${headerCSS.rightOver} ${headerCSS.text}`} active>{state.header as any}</Button>
                             

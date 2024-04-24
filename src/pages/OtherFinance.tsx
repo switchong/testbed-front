@@ -76,6 +76,15 @@ function ListPage() {
         setOtherAcctInfo(newOtherAcctInfo);
     }
 
+    const handelCopyClipBoard = async (text:string) => {
+        try {
+            await navigator.clipboard.writeText(text);
+            alert("클립보드에 계좌번호가 복사되었습니다.");
+        } catch (e) {
+            alert("복사에 실패하였습니다.");
+        }
+    }
+
     return (
         <div className={CSS1.mainBody}>
             <Header />
@@ -92,9 +101,7 @@ function ListPage() {
                                 return (
                                     <div className={CSS1.border} key={`${info.accountNum}`}>
                                         <p className={CSS1.inner_title}>{info.alias}</p>
-                                        <p className={CSS1.inner_sub_title}>
-                                            {info.accountType} {info.accountNum}
-                                        </p>
+                                        <p className={CSS1.inner_sub_title}>{info.accountType} {info.accountNum}<Button onClick={()=>handelCopyClipBoard(info.accountNum)}></Button></p>
                                         <p className={CSS1.txt_price}>
                                             {
                                                 info.isShowHide === true ?

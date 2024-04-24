@@ -66,7 +66,7 @@ function SideBar({isOpen, setIsOpen}: {isOpen: boolean; setIsOpen: any}){
         <SideBarWrap id="sidebar" ref={outside} className={isOpen ? "open" : ""}>
             <img 
                 src={xButton}
-                alt="close"
+                alt="close" 
                 width="15x"
                 height="15px"
                 onClick={toggleSide}
